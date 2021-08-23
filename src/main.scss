@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 // variables
 $primary-color: white;
-$font-stack: Helveltica, sans-serif;
+$font-stack: 'Roboto Condensed', sans-serif;
 $unit: 8px;
 
 // uso de funciones.
@@ -39,13 +40,13 @@ $unit: 8px;
 
 
 body{
-    background-image: url(../img/image-three-min.jpg);
+    background-image: url(../img/image-four.jpg);
     background-position: center ;
     /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: $font-stack;
+
     
 }
 
@@ -53,15 +54,8 @@ body{
     text-decoration: none !important;
     padding: 0;
     margin: 0;
-    
-}
-
-
-h2{
-    font-size: size(5);
-    color: $primary-color;
-    position: absolute;
-    top: 60%;    
+    scroll-behavior: smooth;
+    font-family: $font-stack;
 }
 
 
@@ -82,18 +76,18 @@ h2{
 
 nav{
     margin-left: 30px;
+
     ul{
         display: flex;
         gap: 15px; //propiedad para filas y colum, coloca en fila.
-        list-style: none;
         margin: 0;
         padding: 0;
 
         li{
-
+            list-style: none;
             
             a{
-                font-size: size(1.5);
+                font-size: size(1.85);
                 font-weight: bolder;
                 color: $primary-color;
                 
@@ -132,26 +126,289 @@ nav{
     }
 }
 
-
-
 .cabecera{
-    padding: 30px ;   
-    text-align: center;
-    position: relative;
-    align-items: center;
+    box-shadow: 0 0 10px rgba(131, 131, 131, 0.616) ;
 
-    img{
-        width: 50%;
-        z-index: 1000;
+    width: 100%;
+    margin-top: 20px; // espaciado con el nav
+    height: 500px;
+
+    background-image: url("../img/showcase2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+    word-wrap: break-word;
+    
+
+    .content{
+        //background-color: rosybrown;
+        text-align: center;
+        width: 100%;
+        height: 160px;
+
+        margin-top: 300px;
         
-        box-shadow: 0 0 10px rgba(131, 131, 131, 0.616) ;
+        
+        h2{
+            font-size: size(4);
+            font-weight: bolder;
+            color: $primary-color;       
+        }
+    
+        p{
+            color: $primary-color;
+        }
+
     }
 
-    p{
+}
+
+
+.notices{
+    color: $primary-color;
+    //background-color: blueviolet;
+    width: 100%;
+    margin-top: 20px;
+    height: 400px;
+
+    display: flex;
+
+    .four{
+        margin-right: 0 !important;
+    }
+
+    .item{
+        
+        //background-color: brown;
+        width: 30%;
+        height: 400px;
+        margin-top: 0;
+
+        //margin-left: 10px;
+        margin-right: 10px;
+
+        
+        .info{
+            width: 100%;
+            height: 200px;
+            padding-top: 10px;
+            background-color:rgba(131, 131, 131, 0.616);
+            //background-color: burlywood;
+
+            overflow: hidden;
+            word-wrap: break-word;
+
+
+            h5{
+                font-weight: bolder;
+            }
+
+            a{
+                color: $primary-color;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .img1{
+            
+            width: 100%;
+            height: 200px;
+
+            background-image: url("../img/news1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img2{
+            
+            width: 100%;
+            height: 200px;
+
+            background-image: url("../img/news2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img3{
+            width: 100%;
+            height: 200px;
+
+            background-image: url("../img/news3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img4{
+            
+            width: 100%;
+            height: 200px;
+
+            background-image: url("../img/news4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+    }
+}
+
+.seccion3{
+    box-shadow: 0 0 10px rgba(131, 131, 131, 0.616) ;
+
+    color: $primary-color;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px; // se baja la caja completa, se separa de las demas.
+    padding-top: 70px; // bajamos el contenido
+    padding-left: 30px;
+    
+    overflow: hidden; // evitamos que el contenido se salga de la seccion.
+    word-wrap: break-word;
+
+    background-image: url("../img/tech-red.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 300%;
+    background-position: center;
+
+    .contenido{
+        width: 50%;
+        line-height: 1em;
+
+        h4{
+            font-weight: bolder;
+        }
+    }
+
+}
+
+.seccion5{
+    box-shadow: 0 0 10px rgba(131, 131, 131, 0.616) ;
+    color: $primary-color;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px; // se baja la caja completa, se separa de las demas.
+    padding-top: 70px; // bajamos el contenido
+    padding-left: 30px;
+    
+    overflow: hidden; // evitamos que el contenido se salga de la seccion.
+    word-wrap: break-word;
+
+    background-image: url("../img/image-five.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .contenido{
+        width: 50%;
+        line-height: 1em;
+        h4{
+            font-weight: bolder;
+        }
+    }
+
+}
+
+footer{
+    background-color:rgba(131, 131, 131, 0.616);
+    
+    width: 100%;
+    height: 400px;
+
+    margin-top: 30px;
+
+    .social{
+        background-color: rgba(29, 29, 28, 0.418);
         color: $primary-color;
-        position: absolute;
-        top: 70%;
+        width: 100%;
+        height: 90px;
+        text-align: center;
+
+        .content{
+            
+            //background-color:rgba(131, 131, 131, 0.616);
+            width: 50%;
+            height: 90px;
+            padding-top: 10px;
+            display: inline-block; // me posicionó el contenedor en el centro. 
+                                    //junto con la propiedad text align center del contenedor social.
+
+            h4{
+                font-weight: bolder;
+            }
+
+            ul{
+                padding: 0;   
+                
+                li{
+                    list-style: none;  
+                    display: inline-block;  
+                    padding-right: 10px;
+                    a{
+                        color: $primary-color;
+  
+                        svg{
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        
 
     }
 
+    .info{
+        width: 100%;
+        height: 250px;
+        display: flex;
+
+        color: $primary-color;
+
+        .column{  
+               
+            text-align: left;
+            margin-left: 50px;
+            padding-top: 10px;
+            width: 25%;
+            height: auto;
+
+            h5{
+                font-weight: 900;
+            }
+
+            ul{
+                
+                padding: 0;
+                line-height: 2em; 
+
+                li{
+                    list-style: none;
+                    a{
+                        color: $primary-color;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright{
+        
+        background-color: rgba(29, 29, 28, 0.418);
+        width: 100%;
+        height: 60px;
+
+        p{
+            color: $primary-color;
+            font-weight: bold;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+    }
 }
